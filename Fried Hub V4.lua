@@ -42,6 +42,24 @@
         PlayerSection:NewSlider("JumpPower", "This will change your jump.", 500, 50, function(v) -- 500 (MaxValue) | 0 (MinValue)
             game.Players.LocalPlayer.Character.Humanoid.JumpPower = v
     end)
-       PlayerSection:NewSlider("Fov", "Changes your camera view.", 120, 70, function(v) -- 500 (MaxValue) | 0 (MinValue)
-            workspace.CurrentCamera.FieldOfView = v
+    PlayerSection:NewSlider("Fov", "Changes your camera view.", 120, 70, function(v) -- 500 (MaxValue) | 0 (MinValue)
+        workspace.CurrentCamera.FieldOfView = v
     end)
+
+    --Reanimation
+    local Reanimation = Window:NewTab("Reanimation")
+    local ReanimationSection = Player:NewSection("Reanimation")
+    ReanimationSection:NewDropdown("Reanimate", "Script To Reanimate", {"Reanimate"}, function(v)
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/kiosk-1/WaterHubReanimation/main/WaterHub.lua'))()
+        end)
+
+    --Reanimation Scripts
+    local Reanimation = Window:NewTab("ReanimationScripts")
+    local ReanimationScroptSection = Player:NewSection("Reanimation Scripts")
+    ReanimationScriptSection:NewDropdown("Gale Fighter", "Gale Fighter", {"Reanimate"}, function(v)
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/kiosk-1/WaterHubReanimation/main/Gale%20Fighter.lua'))()
+        end)
+
+        ReanimationScriptSection:NewDropdown("Neptunian V", "Scripts a bit buggy.", {"Reanimate"}, function(v)
+            loadstring(game:HttpGet('https://raw.githubusercontent.com/kiosk-1/WaterHubReanimation/main/NeptunianFE.lua'))()
+            end)
