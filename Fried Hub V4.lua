@@ -68,7 +68,7 @@
             -- GODMODE
             local GodMode = Window:NewTab("God Mode")
             local GodModeSection = GodMode:NewSection("GodMode")
-            GodModeSection:NewDropdown("GodMode", "This allows you to have god mode enabled", {GodMode}, function(v)
+            GodModeSection:NewDropdown("GodMode", "This allows you to have god mode enabled", {"GodMode"}, function(v)
                 addcmd('god',{},function(args, speaker)
                     local Cam = workspace.CurrentCamera
                     local Pos, Char = Cam.CFrame, speaker.Character
@@ -88,5 +88,5 @@
                         Script.Disabled = false
                     end
                     nHuman.Health = nHuman.MaxHealth
-                end)
+                end)()
             end)
