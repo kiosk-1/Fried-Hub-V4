@@ -42,3 +42,6 @@
         PlayerSection:NewSlider("JumpPower", "This will change your jump.", 500, 50, function(v) -- 500 (MaxValue) | 0 (MinValue)
             game.Players.LocalPlayer.Character.Humanoid.JumpPower = v
     end)
+       PlayerSection:NewSlider("Fov", "Changes your camera view.", 120, 70, function(v) -- 500 (MaxValue) | 0 (MinValue)
+            workspace.CurrentCamera.FieldOfView = v
+    end)
