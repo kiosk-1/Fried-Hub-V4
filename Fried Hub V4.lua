@@ -48,18 +48,19 @@
 
     --Reanimation
     local Reanimation = Window:NewTab("Reanimation")
-    local ReanimationSection = Player:NewSection("Reanimation")
+    local ReanimationSection = Reanimation:NewSection("Reanimation")
     ReanimationSection:NewDropdown("Reanimate", "Script To Reanimate", {"Reanimate"}, function(v)
         loadstring(game:HttpGet('https://raw.githubusercontent.com/kiosk-1/WaterHubReanimation/main/WaterHub.lua'))()
         end)
 
     --Reanimation Scripts
     local Reanimation = Window:NewTab("ReanimationScripts")
-    local ReanimationScroptSection = Player:NewSection("Reanimation Scripts")
-    ReanimationScriptSection:NewDropdown("Gale Fighter", "Gale Fighter", {"Reanimate"}, function(v)
+    local ReanimationScriptSection = Reanimation:NewSection("Reanimation Scripts")
+    ReanimationScriptSection:NewDropdown("Gale Fighter", "Gale Fighter", {"Gale Fighter"}, function(v)
         loadstring(game:HttpGet('https://raw.githubusercontent.com/kiosk-1/WaterHubReanimation/main/Gale%20Fighter.lua'))()
         end)
 
-        ReanimationScriptSection:NewDropdown("Neptunian V", "Scripts a bit buggy.", {"Reanimate"}, function(v)
+
+            ReanimationScriptSection:NewDropdown("Neptunian V", "Scripts a bit buggy.", {"Neptunian V"}, function(v)
             loadstring(game:HttpGet('https://raw.githubusercontent.com/kiosk-1/WaterHubReanimation/main/NeptunianFE.lua'))()
             end)
