@@ -66,5 +66,5 @@
             end)
 
             -- Credits
-            local GodMode = Window:NewTab("Credits")
-            local GodModeSection = GodMode:NewSection("Credits to Rayz")
+            local Credits = Window:NewTab("Credits")
+            local CreditsSection = Credits:NewSection("Credits to Rayz")
