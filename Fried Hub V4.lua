@@ -61,6 +61,6 @@
         end)
 
 
-            ReanimationScriptSection:NewDropdown("Neptunian V", "Scripts a bit buggy.", {"Neptunian V"}, function(v)
-            loadstring(game:HttpGet('https://raw.githubusercontent.com/kiosk-1/WaterHubReanimation/main/NeptunianFE.lua'))()
+            ReanimationScriptSection:NewDropdown("Fling", "When you go to someone they get flung to space.", {"Fling"}, function(v)
+            loadstring(game:HttpGet('print("LOL! FLUNG!!!")'))()
             end)
